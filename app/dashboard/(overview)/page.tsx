@@ -10,6 +10,11 @@ export const metadata: Metadata = {
   title: 'Dashboard',
 };
 
+// 🚀 强制动态渲染，避免 build 阶段连数据库
+export const dynamic = "force-dynamic";
+// 或者
+export const revalidate = 0;
+
 export default async function Page() {
 
   return (
